@@ -1,0 +1,44 @@
+<!doctype html>
+<head>
+    <title>Hello Azure - Nodejs Quickstart</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+  </head>
+<html>
+   <body>
+     <main>
+        <div class="px-4 py-3 my-2 text-center">
+          <h1 class="display-6 fw-bold text-primary">Welcome to the Cognitive Load App</h1>            
+          </div>
+
+
+        <form method="post" action="/prediction_wrapper">
+          <div class="col-md-6 mx-auto text-center">
+              <label for="file" class="form-label fw-bold fs-5">Filename for prediction: </label>
+              
+    
+
+              <!-- <p class="lead mb-2">Could you please tell me your name?</p> -->
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
+                  <input type="text" class="form-control" id="file" name="file" style="max-width: 256px;">
+                </div>            
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
+                <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Get Prediction</button>
+              </div>         
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
+                <p id="prediction_val"></p>
+              </div>    
+                 
+          </div>
+      </form>
+
+        <form method="post" action="{{url_for('recording_wrapper')}}">
+            <div class="col-md-6 mx-auto text-center">                
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
+                  <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Start Recording</button>
+                </div>       
+            </div>
+        </form>
+     </main>      
+   </body>
+</html>
