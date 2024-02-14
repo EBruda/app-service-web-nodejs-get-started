@@ -1,6 +1,6 @@
 const noble = require('noble');
 const bleno = require('@abandonware/bleno')
-const bluetooth_hci_socket_name= require('@abandonware/bluetooth-hci-socket')
+const bluetooth_hci_socket_name = require('@abandonware/bluetooth-hci-socket')
 
 const fs = require('fs')
 const cheerio = require('cheerio')
