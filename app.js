@@ -1,5 +1,7 @@
 const noble = require('noble');
-const bluetooth = require('bleat').webbluetooth;
+const bleno = require('@abandonware/bleno')
+const bluetooth_hci_socket = require('@abandonware/bluetooth-hci-socket')
+
 const fs = require('fs')
 const cheerio = require('cheerio')
 var express = require('express');
